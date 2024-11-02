@@ -23,7 +23,7 @@ const header = `
         <button id="search"><img src="./assets/images/search.svg" alt="search"></button>
       </div>
       <div class="cart">
-        <img id="cart" src="../assets/images/cart.png" alt="cart">
+        <img id="cart" src="./assets/images/cart.png" alt="cart">
         <span class="cart-number">0</span>
       </div>
     </div>

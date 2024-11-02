@@ -1,0 +1,6 @@
+.category{
+    min-height: 75vh;
+    h1{
+        text-transform: capitalize;
+    }
+}

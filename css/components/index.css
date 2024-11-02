@@ -1,0 +1,155 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.categories,
+.featured-products,
+.reviews {
+    padding: 20px;
+    text-align: center;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
+
+.category,
+.review {
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+
+    .category-image,
+    .product-image {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category-info,
+    .product-info {
+        text-transform: capitalize;
+    }
+
+    img {
+        max-height: 250px;
+        max-width: 100%;
+    }
+
+    p {
+        font-weight: bolder;
+    }
+}
+
+.review {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    *{
+        z-index: 1;
+    }
+    p {
+        font-weight: bolder;
+    }
+
+    span {
+        font-weight: 100;
+        color: rgb(91, 91, 91);
+        word-break: break-all;
+    }
+
+    .date-rate {
+        display: flex;
+        position: absolute;
+        justify-content: flex-end;
+        width: 100%;
+        top: 5px;
+        left: 0px;
+        padding: 0 5px;
+
+        img {
+            width: 17px;
+        }
+    }
+    .review-img{
+        opacity: 0.5;
+        position: absolute;
+        z-index: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+@media all and (max-width: 850px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .hero-text {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    
+
+    .category {
+        padding: 0;
+    }
+
+    .categories,
+    .featured-products,
+    .reviews {
+        padding: 10px;
+        text-align: center;
+    }
+}
